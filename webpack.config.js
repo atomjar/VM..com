@@ -11,8 +11,7 @@ module.exports = {
 	output: {
 		path: path.resolve('./dist/'),
 		filename: 'js/bundle.js',
-		publicPath: '/',
-		libraryTarget: 'umd',
+		publicPath: '/'
 	},
 	module: {
 		devtool: 'source-map',
@@ -68,6 +67,8 @@ module.exports = {
 			from: './robots.txt'
 		},{
 			from: './favicon.ico'
+		},{
+			from: './'
 		},{
 			from: './img/**/*',
 			to: './'

@@ -6,6 +6,10 @@
 	margin: $gap/2 0;
 }
 
+.navbar-item {
+	font-weight: 700;
+}
+
 // BOX
 .box {
 	padding: $gap;
@@ -14,6 +18,12 @@
 // LEVEL
 .level .field {
 	margin-bottom: 0;
+}
+
+// ARTICLE
+.article-object {
+	border-bottom: solid 1px $grey-lighter;
+	padding: $gap 0;
 }
 
 // UTILITIES
