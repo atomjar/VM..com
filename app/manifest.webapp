@@ -1,0 +1,25 @@
+{
+	"version": "1.0.0",
+	"name": "Vue Mastery",
+	"launch_path": "/index.html",
+	"description": "VueMastery.com: News and tutorials to reach Vue mastery",
+	"icons": {
+		"128": "/img/icon-128x128.png"
+	},
+	"developer": {
+		"name": "Adam Jar",
+		"url": "https://github.com/atomjar/VM..com.git"
+	},
+	"installs_allowed_from": [
+		"*"
+	],
+	"default_locale": "en",
+	"permissions": {
+	},
+	"locales": {
+		"en": {
+			"name": "Vue Mastery",
+			"description": "VueMastery.com: News and tutorials to reach Vue mastery"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import 'variables';
+@import '~bulma/bulma';
+
+// HEADER
+.header {
+	margin: $gap/2 0;
+}
+
+// BOX
+.box {
+	padding: $gap;
+}
+
+// LEVEL
+.level .field {
+	margin-bottom: 0;
+}
+
+// UTILITIES
+.valign {
+	display: flex;
+	> .is-middle {
+		align-self: center;
+	}
+	> .is-bottom {
+		align-self: flex-end;
+	}
+}
+
+.blue {
+	color: $blue !important;
+}
