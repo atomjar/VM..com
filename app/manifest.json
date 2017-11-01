@@ -1,6 +1,6 @@
 {
-	"name": "Static Website Boilerplate",
-	"short_name": "SWB",
+	"name": "Vue Mastery",
+	"short_name": "VM",
 	"icons": [{
 				"src": "/img/icon-128x128.png",
 				"sizes": "128x128",

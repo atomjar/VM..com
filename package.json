@@ -1,7 +1,7 @@
 {
-  "name": "static-website-webpack-boilerplate",
+  "name": "vue-mastery",
   "version": "0.0.1",
-  "description": "Static website boilerplate using webpack and bootstrap",
+  "description": "VueMastery.com: News and tutorials to reach Vue mastery",
   "main": "bundle.js",
   "scripts": {
     "start": "webpack --watch",
@@ -10,11 +10,10 @@
   },
   "keywords": [
     "webpack",
-    "boilerplate",
-    "static",
+    "vue",
     "website"
   ],
-  "author": "Binoy Patel",
+  "author": "Adam Jar",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.13.2",

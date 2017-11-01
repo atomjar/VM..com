@@ -1,10 +1,10 @@
-# Static Website Boilerplate
+# Vue Mastery
 
-Static website boilterplate built using Webpack. This boilterplate features following:
+VueMastery.com: News and tutorials to reach Vue mastery
 
 - Webpack
 - ES6
-- Bootstrap
+- Bulma
 - Font Awesome
 - Sass
 - Live reload using Browsersync
@@ -12,9 +12,13 @@ Static website boilterplate built using Webpack. This boilterplate features foll
 ## Getting Started
 
 Clone the repo
-
 ```sh
-git clone https://github.com/binoy14/static-website-webpack-boilerplate.git
+git clone https://github.com/atomjar/VM..com.git
+```
+
+Install dependencies
+```sh
+yarn
 ```
 
 Run script to start devlopment

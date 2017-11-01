@@ -1,14 +1,14 @@
 {
 	"version": "1.0.0",
-	"name": "Static Website Boilerplate",
+	"name": "Vue Mastery",
 	"launch_path": "/index.html",
-	"description": "Static website boilerplate using webpack and bootstrap",
+	"description": "VueMastery.com: News and tutorials to reach Vue mastery",
 	"icons": {
 		"128": "/img/icon-128x128.png"
 	},
 	"developer": {
-		"name": "Binoy Patel",
-		"url": "https://github.com/binoy14"
+		"name": "Adam Jar",
+		"url": "https://github.com/atomjar/VM..com.git"
 	},
 	"installs_allowed_from": [
 		"*"
@@ -18,8 +18,8 @@
 	},
 	"locales": {
 		"en": {
-			"name": "Static Website Boilerplate",
-			"description": "Static website boilerplate using webpack and bootstrap"
+			"name": "Vue Mastery",
+			"description": "VueMastery.com: News and tutorials to reach Vue mastery"
 		}
 	}
 }
