@@ -1,9 +1,11 @@
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
 var webpack = require('webpack');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+
 
 module.exports = {
 	context: path.resolve('./app'),
@@ -11,7 +13,8 @@ module.exports = {
 	output: {
 		path: path.resolve('./dist/'),
 		filename: 'js/bundle.js',
-		publicPath: '/'
+		publicPath: '/',
+		libraryTarget: 'umd',
 	},
 	module: {
 		devtool: 'source-map',
@@ -26,7 +29,7 @@ module.exports = {
 			test: /\.html$/,
 			loader: 'html'
 		},{
-			test: /\.scss$/,
+			test: /\.s[ac]ss$/,
 			loaders: ["style", "css", "sass"]
 		},{
 			test: /\.css$/,
@@ -51,6 +54,9 @@ module.exports = {
 			$: 'jquery',
 			jQuery: 'jquery',
 		}),
+		new StaticSiteGeneratorPlugin({
+      crawl: true
+    }),
 		new BrowserSyncPlugin({
 			server: {
 				baseDir: ['dist']

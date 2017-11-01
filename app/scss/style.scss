@@ -1,6 +1,7 @@
-body {
-	background-color: #607d8b;
-}
-.jumbotron {
-	background-color: #cfd8dc;
+@import 'variables';
+@import '~bulma/bulma';
+
+// HEADER
+.header {
+	margin: $gap/2 0;
 }

@@ -1,58 +1,234 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="Static website boilerplate using webpack and bootstrap">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Static Website Boilerplate</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Disable tap highlight on IE -->
-		<meta name="msapplication-tap-highlight" content="no">
+	<title>Vue Mastery</title>
 
-		<!-- Web Application Manifest -->
-		<link rel="manifest" href="manifest.json">
+	<!-- Disable tap highlight on IE -->
+	<meta name="msapplication-tap-highlight" content="no">
 
-		<!-- Add to homescreen for Chrome on Android -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="application-name" content="Static Website Boilerplate">
-		<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
+	<!-- Web Application Manifest -->
+	<link rel="manifest" href="manifest.json">
 
-		<!-- Add to homescreen for Safari on iOS -->
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
-		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Static Website Boilerplate">
+	<link rel="icon" sizes="192x192" href="/img/chrome-touch-icon-192x192.png">
 
-		<!-- Tile icon for Win8 (144x144 + tile color) -->
-		<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
-		<meta name="msapplication-TileColor" content="#263238">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Static Website Boilerplate">
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
-		<!-- Color the status bar on mobile devices -->
-		<meta name="theme-color" content="#263238">
-	</head>
-	<body>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-			  <!-- Brand and toggle get grouped for better mobile display -->
-			  <div class="navbar-header">
-			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-			    <a class="navbar-brand" href="#">Website Boilterplate</a>
-			  </div>
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="/img/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#263238">
 
-			  <!-- Collect the nav links, forms, and other content for toggling -->
-			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
-			      <li><a href="#contact">Contact</a></li>
-			    </ul>
-			  </div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</body>
+	<!-- Color the status bar on mobile devices -->
+	<meta name="theme-color" content="#263238">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="">
+						<img src="/img/lgo-vuemastery.png" style="margin-right:10px;" alt="VueMastery.com: News and tutorials to reach Vue mastery" >
+						<span>VueMastery</span>
+					</a>
+
+					<button class="button navbar-burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+				</div>
+
+				<div class="navbar-menu" id="navMenu">
+					<div class="navbar-start">
+						<a href="/news.html" class="navbar-item" >News</a>
+						<a href="/learn.html" class="navbar-item" >Learn</a>
+						<a href="/about.html" class="navbar-item" >About</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- nav ends -->
+
+	<!-- hero starts -->
+	<section class="hero is-primary is-bold is-medium">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns">
+					<div class="column" style="display: flex">
+						<div style="align-self: center">
+							<h1 class="title is-1">Become a Vue Master</h1>
+							<h2 class="subtitle is-3">Learn with us weekly</h2>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box">
+							<h3 class="title" style="color: #273958;">Get our weekly Vue newsletter</h3>
+							<div class="field">
+								<p class="control">
+									<input class="input" type="email" placeholder="Enter your email">
+								</p>
+							</div>
+							<div class="field">
+								<p class="control">
+									<button class="button" style="color: white; background-color: #273958;">Subscribe</button>
+									<a style="text-decoration: underline; color: #273958;" href="#">Subscribe to our podcast on iTunes</a>
+
+								</p>
+							</div>
+						</div>
+						<a href="#" style="text-decoration: underline;">Want to submit a contribution?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- hero ends -->
+
+	<!-- news starts -->
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-two-thirds" style="display: flex">
+					<div style="align-self: flex-end">
+						<h2 class="title is-2" style="color: #273958">VueMastery Weekly - 1</h2>
+						<p class="subtitle is-4">Welcome to our first issue. This week we will cover a lot. You should read everything and also listen to our podcast. We'll also tell you more stuff about stuff and stuff.</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="box">
+						<h4 class="title is-6">Listen to the Vue Podcast</h4>
+						<audio controls style="padding-bottom: 5px;">
+              <source src="vue.mp3" type="audio/mpeg">
+            </audio>
+						<p style="padding-bottom: 15px;">Adam &amp; Gregg discuss the weekly news in our podcast.</p>
+						<a class="button" style="color: white; background-color: #273958;" href="">Subscribe on iTunes</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+
+			<!-- Media component -->
+			<article class="columns">
+				<div class="column is-two-thirds">
+					<a href="#">
+						<h3 class="title is-3" style="color: #18D0B1;">How to: Vue Router</h3>
+					</a>
+					<p class="subtitle">Description of article goes here and describes what the reader can expect about the article and stuff and more and even more stuff.</p>
+					<b>By:&nbsp;</b><span>Michele Gorsecht</span>
+					<span class="tag is-primary" style="float: right;">Opinion</span>
+				</div>
+				<div class="column">
+					<figure class="image is-3by2">
+						<img src="https://via.placeholder.com/480x320" alt="">
+					</figure>
+				</div>
+			</article>
+			<!--/ End media component -->
+			<hr>
+			<!-- Media component -->
+			<article class="columns">
+				<div class="column is-two-thirds">
+					<a href="#">
+						<h3 class="title is-3" style="color: #18D0B1;">Vuex State Management</h3>
+					</a>
+					<p class="subtitle">Description of article goes here and describes what the reader can expect about the article and stuff and more and even more stuff.</p>
+					<b>By:&nbsp;</b><span>Adrian Vargana</span>
+					<span class="tag is-primary" style="float: right;">Opinion</span>
+				</div>
+				<div class="column">
+				</div>
+			</article>
+			<!--/ End media component -->
+			<hr>
+			<!-- Media component -->
+			<article class="columns">
+				<div class="column is-two-thirds">
+					<a href="#">
+						<h3 class="title is-3" style="color: #18D0B1;">VueConf Workshops</h3>
+					</a>
+					<p class="subtitle">Description of article goes here and describes what the reader can expect about the article and stuff and more and even more stuff.</p>
+					<b>By:&nbsp;</b><span>Evan You</span><span class="tag is-primary" style="float: right;">Tutorial</span>
+				</div>
+				<div class="column">
+					<figure class="image is-3by2">
+						<img src="https://via.placeholder.com/480x320" alt="">
+					</figure>
+				</div>
+			</article>
+			<!--/ End media component -->
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+
+			<div class="box level">
+				<div class="level-item">
+					<p class="title is-4">Get this content in your inbox</p>
+				</div>
+
+				<div class="level-item">
+					<div class="column">
+						<input class="input" type="email" placeholder="Enter your email">
+					</div>
+					<div class="column is-narrow">
+						<button class="button" style="color: white; background-color: #273958;">Subscribe</button>
+					</div>
+					<div class="column">
+						<button class="button is-primary">Subscribe on iTunes</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- email card ends -->
+
+	<section class="section">
+		<div class="container">
+			<nav class="pagination is-right" role="navigation" aria-label="pagination">
+				<a class="pagination-previous">Previous</a>
+				<a class="pagination-next">Next</a>
+				<ul class="pagination-list">
+					<li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+					<li><span class="pagination-ellipsis">&hellip;</span></li>
+					<li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+					<li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+					<li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+					<li><span class="pagination-ellipsis">&hellip;</span></li>
+					<li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<!-- pagination ends -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Vue Mastery</strong> by <a href="http://codepop.com">Codepop</a>. The source code is licensed
+					<a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
