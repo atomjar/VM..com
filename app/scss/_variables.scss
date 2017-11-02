@@ -36,6 +36,7 @@ $dark: $grey-darker !default
 $title-color: $primary;
 $subtitle-color: $grey-darker;
 $navbar-item-color: $blue;
+$navbar-item-hover-color: darken($blue, 10%);
 $navbar-item-hover-background-color: transparent;
 
 // Typography
