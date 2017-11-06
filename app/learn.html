@@ -34,13 +34,13 @@
 </head>
 
 <body>
-	<header class="header" style="background-color: #273958;">
+	<header class="header">
 		<div class="container">
-			<nav class="navbar" style="background-color: transparent;" role="navigation" aria-label="main navigation">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="">
-						<!-- <img src="./assets/vm_logo.png" alt="VueMastery.com: News and tutorials to reach Vue mastery" width="50" height="70"> -->
-						<span style="color: white;">VueMastery</span>
+					<a class="navbar-item" href="/">
+						<img src="/img/lgo-vuemastery.png" style="margin-right:10px;" alt="VueMastery.com: News and tutorials to reach Vue mastery" >
+						<span>VueMastery</span>
 					</a>
 
 					<button class="button navbar-burger" data-target="navMenu">
@@ -52,45 +52,46 @@
 
 				<div class="navbar-menu" id="navMenu">
 					<div class="navbar-start">
-						<a href="/news.html" class="navbar-item" style="color: white;">News</a>
-						<a href="/learn.html" class="navbar-item" style="color: white;">Learn</a>
-						<a href="/about.html" class="navbar-item" style="color: white;">About</a>
+						<a href="/news.html" class="navbar-item" >News</a>
+						<a href="/learn.html" class="navbar-item" >Learn</a>
+						<a href="/about.html" class="navbar-item" >About</a>
 					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
-
 	<!-- nav ends -->
 
 	<!-- hero starts -->
-	<section class="hero is-primary is-bold is-medium">
+	<section class="hero is-primary is-bold">
 		<div class="hero-body">
 			<div class="container">
 				<div class="columns">
-					<div class="column" style="display: flex">
-						<div style="align-self: center">
+					<div class="column valign">
+						<div class="is-middle">
 							<h1 class="title is-1">Become a Vue Master</h1>
 							<h2 class="subtitle is-3">Learn with us weekly</h2>
 						</div>
 					</div>
 					<div class="column">
 						<div class="box">
-							<h3 class="title" style="color: #273958;">Get our weekly Vue newsletter</h3>
-							<div class="field">
-								<p class="control">
-									<input class="input" type="email" placeholder="Enter your email">
-								</p>
+							<h3 class="title blue">Get our weekly Vue newsletter.</h3>
+							<div class="field is-grouped">
+								<div class="control has-icons-left is-expanded">
+									<input class="input is-medium" type="email" placeholder="Enter your email">
+									<span class="icon is-left">
+								    <i class="fa fa-envelope"></i>
+								  </span>
+								</div>
+								<div class="control">
+									<button class="button is-link is-medium">Subscribe</button>
+								</div>
 							</div>
-							<div class="field">
-								<p class="control">
-									<button class="button" style="color: white; background-color: #273958;">Subscribe</button>
-									<a style="text-decoration: underline; color: #273958;" href="#">Subscribe to our podcast on iTunes</a>
-
-								</p>
+							<div class="field is-grouped-centered">
+								<a class="button is-text" href="javascript:;">Subscribe to our podcast on iTunes</a>
 							</div>
 						</div>
-						<a href="#" style="text-decoration: underline;">Want to submit a contribution?</a>
+						<a class="white" href="javascript:;">Want to submit a contribution?</a>
 					</div>
 				</div>
 			</div>
@@ -98,43 +99,47 @@
 	</section>
 	<!-- hero ends -->
 
-  <section class="container" style="padding-top: 50px;">
-      <div class="columns">
-          <div class="column">
-              <h1 class="title is-1">Why Learn Vue?</h1>
-              <p class="subtitle">We worked closely with the Vue core team to develop this video that shows the magical features of this JS framework.</p>
-          </div>
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column valign">
+					<div class="is-middle">
+						<h1 class="title is-1">Why Learn Vue?</h1>
+						<p class="subtitle">We worked closely with the Vue core team to develop this video that shows the magical features of this JS framework.</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="box" style="height: 400px;">
+							video goes in here
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-          <div class="column">
-              <div class="box" style="height: 400px;">
-                  video goes in here
-              </div>
-          </div>
-      </div>
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-centered">
+					<div class="column is-half is-narrow text-center">
+						<h1 class="title is-3">Ready to become a Vue Master?</h1>
+						<p class="subtitle is-6">Over the next month, we'll be releasing a Vue video series to help you reach Vue mastery. For early access, drop in your email. <br> We'll be in touch</p>
 
-      <div class="columns">
-              <div class="column">
-                  <h1 class="title is-3">Ready to become a Vue Master?</h1>
-                  <p class="subtitle is-6">Over the next month, we'll be releasing a Vue video series to help you reach Vue mastery. For early access, drop in your email. <br> We'll be in touch</p>
-              </div>
-
-              <div class="column">
-                      <div class="box">
-                          <div class="field">
-                              <p class="control">
-                                  <input class="input" type="email" placeholder="Enter your email">
-                              </p>
-                          </div>
-                          <div class="field">
-                              <p class="control">
-                                  <button class="button" style="color: white; background-color: #273958;">Notify me</button>
-                              </p>
-                          </div>
-                      </div>
-              </div>
-          </div>
-
-  </section>
+						<div class="field is-grouped">
+							<div class="control has-icons-left is-expanded">
+								<input class="input is-medium" type="email" placeholder="Enter your email">
+								<span class="icon is-left">
+									<i class="fa fa-envelope"></i>
+								</span>
+							</div>
+							<div class="control">
+								<button class="button is-link is-medium">Subscribe</button>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
